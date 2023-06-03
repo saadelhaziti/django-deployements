@@ -35,7 +35,7 @@ def logine(request):
                                 'modules': module_data})
         else :
             return JsonResponse({'authenticated': False})
-    except Student.DoesNotExist:
+    except verfeed.DoesNotExist:
         return JsonResponse({'authenticated': False})
 
 @csrf_exempt
